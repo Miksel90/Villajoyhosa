@@ -1,6 +1,36 @@
 {
+  "name": "Vilajoyhosa",
+  "version": "0.1.0",
+  "description": "This is the repository for Helenas apartment",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "CSS",
+    "Frameworks",
+    "Bootstrap",
+    "SCSS",
+    "SASS"
+  ],
+  "author": "Mikael Selstad <mikael.selstad@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
   "dependencies": {
-    "bootstrap": "^5.3.2",
-    "liveserver": "^0.1.20"
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.11.1",
+    "live-server": "^1.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }
