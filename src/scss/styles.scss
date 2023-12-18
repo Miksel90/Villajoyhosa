@@ -1,1 +1,33 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// landing page//
+
+.masthead {
+  position: relative;
+  height: 800px;
+}
+
+.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/images/villa1.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+// Carousell //
+
+.carousel-item img {
+  height: 800px;
+  object-fit: contain;
+}
+
+.custom-text {
+  text-shadow: 1px 1px 2px #000000;
+}
