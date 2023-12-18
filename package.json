@@ -1,5 +1,5 @@
 {
-  "name": "Vilajoyhosa",
+  "name": "lavila",
   "version": "0.1.0",
   "description": "This is the repository for Helenas apartment",
   "main": "index.html",
@@ -21,9 +21,6 @@
   ],
   "author": "Mikael Selstad <mikael.selstad@gmail.com>",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": "",
   "dependencies": {
     "bootstrap": "^5.3.1",
