@@ -11883,4 +11883,24 @@ textarea.form-control-lg {
   text-shadow: 1px 1px 2px #000000;
 }
 
+.info-bg {
+  position: relative;
+  height: 1000px;
+}
+
+.info-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/images/villa2.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=styles.css.map */
