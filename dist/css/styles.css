@@ -11857,6 +11857,7 @@ textarea.form-control-lg {
 }
 .nav-link:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 #back-to-top {
