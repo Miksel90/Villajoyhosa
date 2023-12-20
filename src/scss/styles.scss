@@ -5,6 +5,10 @@ $primary: #000000;
 
 // landing page//
 
+.nav-link:hover {
+  cursor: pointer;
+}
+
 #back-to-top {
   z-index: 999999;
 }

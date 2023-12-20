@@ -11855,6 +11855,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-link:hover {
+  cursor: pointer;
+}
+
 #back-to-top {
   z-index: 999999;
 }
