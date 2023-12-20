@@ -11856,7 +11856,7 @@ textarea.form-control-lg {
   }
 }
 #back-to-top {
-  z-index: 99;
+  z-index: 999999;
 }
 
 .masthead {

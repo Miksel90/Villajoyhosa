@@ -2,8 +2,12 @@ function setupScrollBehavior() {
   window.onscroll = () => {
     toggleTopButton();
   };
-
-  document.getElementById("back-to-up").addEventListener("click", scrollToTop);
+  document
+    .getElementById("back-to-top")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      scrollToTop();
+    });
 
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -14,9 +18,11 @@ function setupScrollBehavior() {
       document.body.scrollTop > 30 ||
       document.documentElement.scrollTop > 30
     ) {
-      document.getElementById("back-to-up").classList.remove("d-none");
+      document.getElementById("back-to-top").classList.remove("d-none");
     } else {
-      document.getElementById("back-to-up").classList.add("d-none");
+      document.getElementById("back-to-top").classList.add("d-none");
     }
   }
 }
+
+setupScrollBehavior();
