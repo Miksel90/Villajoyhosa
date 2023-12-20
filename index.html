@@ -17,13 +17,14 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/scroll.js" defer></script>
   </head>
   <body>
     <header class="navbar navbar-expand-lg sticky-top p-0">
-      <div class="container bg-dark p-3">
+      <div class="container bg-white border border-primary p-3">
         <a
           href="/index.html"
-          class="navbar-brand d-flex align-items-center fs-1 text-white"
+          class="navbar-brand d-flex align-items-center fs-1"
         >
           <span class="d-sm-inline d-none ms-2">Costareta 19</span></a
         >
@@ -39,24 +40,31 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto me-1-sm float-end fs-5">
             <li class="nav-item">
-              <a class="nav-link text-white" href="">Leiligheten</a>
+              <a class="nav-link " href="">Leiligheten</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="">Byen</a>
+              <a class="nav-link " href="">Byen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href=""></a>
+              <a class="nav-link " href="">Leie</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
     <main>
+      <button
+      class="btn btn-lg btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none"
+      id="back-to-up"
+      aria-label="Scroll to top"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
       <section class="container-fluid text-center mt-1">
         <div class="masthead p-5 fs-1 fw-bold">Velkommen til La Villa</div>
       </section>
-      <section class="Leiligheten text-center mt-1 p-3 fs-1">
-        Her Bor Jeg
+      <section class=" container-fluid Leiligheten text-center mt-1 fs-1">
+        <h2 class="fs-1 text-primary mt-5 mb-3">Her Bor Jeg</h2>
         <div
           id="carouselExampleCaptions"
           class="carousel container-fluid slide mb-1"
@@ -285,34 +293,92 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class=" container-fluid info-bg bg-dark bg-opacity-50">
-          <h1 class="text-white custom-text p-1">Informasjon om Leiligheten</h1>
-          <div class="row d-flex justify-content-between alig">
+        <h1 class="text-primary mb-3 mt-3">Informasjon om Leiligheten</h1>
+        <div class=" container-fluid info-bg ">
+          <div class="row d-flex justify-content-between">
             <div
-              class="col-md-5 text-white custom-text text-start mx-auto fs-5 border border-white p-3"
-            >
-              Leiligheten ligger i hjertet av gamlebyen i Vilajoyosa med kort
-              vei ned til stranden og resturanter. For å komme til leiligheten
-              må du vandre gjennom smale, brosteinsbelagte gater fullt av liv.
+              class="col-md-5 mt-5 bg-opacity-75 bg-white text-start mx-auto fs-5 border border-white p-3 "
+            ><p class="text-primary p-1"> Leiligheten ligger i hjertet av gamlebyen i Vilajoyosa med kort
+              vei til stranden og resturanter. Gamlebyen er kjent for sine smale, brosteinsbelagte gater fullt av liv.
+              Dette er byen spanjolene ferier i, så byen er ikke overfylt med hoteller og andre typiske turistfeller.</P>
+              <p class="text-primary p-1">
               Leiligheten ligger omtrent 5 minutters gange fra sentrum av byen,
-              og 10 minuter til toget som kan ta deg til både Alicante og videre
-              nordover Costa Blanca.
+              og 10 minuter til toget som kan ta deg sørover til Alicante på ca 45min eller videre
+              nordover langs Costa Blanca til f.eks Calpe og Benidorm.</p>
+              <p class="text-primary p-1">
+                Det tar 2 minutter å gå til stranden, Playa de Villajoyosa som er kjent for sin fine, gyldne sand og krystallklare vann, noe som gjør den ideell for bading og soling.
+                 Den er også tildelt Blått Flagg-status for renhet og fasiliteter.</p>
+                 <p class="text-primary p-1">
+                  Strandpromenaden er like tiltalende som strendene. Den er kantet med en rekke kafeer, barer og restauranter som serverer lokal mat, særlig fersk sjømat. Promenaden er et ypperlig sted for en avslappende spasertur, og gir fantastisk utsikt over Middelhavet.</p>
+              <p class="fs-3 fw-bold text-center">Google maps </p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195.14244569724025!2d-0.23248426627044516!3d38.5042728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6219f2ea2f0319%3A0xf596d8959afcff45!2sC.%20Costereta%2C%2019%2C%2003570%20La%20Vila%20Joiosa%2C%20Alacant%2C%20Spain!5e0!3m2!1sen!2sno!4v1703063986279!5m2!1sen!2sno"
+               class=" col-md-12 d-flex border border-primary" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col-md-5 text-white custom-text text-start mx-auto border border-white p-3"> 
+            <div    class="col-md-5 mt-5 bg-opacity-75 bg-white text-start mx-auto fs-5 border border-white p-3">
                 <ul class=" fs-3"> To soverom:  6 - 8 sengeplasser
                     <li class="fs-5">Hovedsoverommet har en dobbelseng og egen fransk balkong med utsikt.</li>
                     <li class="fs-5">Gjesterommet har to enkeltsenger som kan gjøres om til dobbeltsenger, og har utsikt ut mot gaten.</li>
                     <li class="fs-5">Sofaen i stuen kan trekkes ut til dobbeltseng.</li>
-                    <li class="fs-5">Det er aircondition på begge soverommene.</li>
                 </ul>
                 <ul class="fs-3"> To bad
                     <li class="fs-5">Begge badene har dusj og toalett.</li>
                 </ul>
-                <ul class="fs-3"> Kjøkken
-                    <li class="fs-5">Kjøkkenet kommer fult utstyrt med oppvaskmaskin, konfyr, kjøleskap, kaffetrakter osv.</li>
+                <ul class="fs-3"> Kjøkkenet
+                    <li class="fs-5">Kjøkkenet kommer fult utstyrt med oppvaskmaskin, komfyr, kjøleskap, kaffetrakter osv.</li>
+                    <li class="fs-5">Leiligheten har et stort spisebord med plass til flere</li>
                 </ul>
+                <ul class="fs-3"> Vaskerom
+                  <li class="fs-5">Leiligheten er utstyrt med vaskemaskin</li>
+              </ul>
+              <ul class="fs-3"> Stuen
+                <li class="fs-5">Stuen har fransk balkong med utsikt over sjøen. Her kan man nyte lyden fra bølgene på kvelden.</li>
+                <li class="fs-5">Tv med HDMI oppkobling.</li>
+                <li class="fs-5">Et lite musikkanlegg med AUX tilkobling.</li>
+            </ul>
+            <ul class="fs-3"> Aircondition
+              <li class="fs-5">Det er aircondition i alle rom</li>
+          </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid leie" id="kontakt">
+        <h3 class="fs-1 text-center mt-3 mb-3"> Kontakt og Priser </h3>
+      </section>
+      <section class="container-fluid" id="byen">
+        <h3 class="fs-1 text-center mt-3 mb-3">Byen</h3>
+        <div class="byen-bg">
+          <div class="row">
+            <div class="col-md-5 mt-5 bg-opacity-75 bg-white text-start mx-auto fs-5 border border-white p-3 ">
+              <p class="p-3">Villajoyosa, også kjent som La Vila Joiosa, er en sjarmerende kystby i Alicante-provinsen på Costa Blanca i Spania.
+                 Byen er berømt for sine fargerike hus, historiske arv, vakre strender og sin sjokoladeindustri. Her er noen høydepunkter om Villajoyosa:</p>
+                 <ul class="fs-6">
+                  <li class="p-1"> <span class="fw-bold">Fargerike hus:</span> En av de mest bemerkelsesverdige egenskapene ved Villajoyosa er rekken av levende, fargerike hus som ligger langs strandpromenaden.
+                     Disse husene, som tidligere tilhørte fiskere, gir byen et særegent og fotogenisk utseende.</li>
+                     <li class="p-1"> <span class="fw-bold">Historisk betydning: </span>Villajoyosa har en rik historie, med spor som går tilbake til romertiden. Byen har også viktige historiske steder som bymuren, gothiske kirker, og tårn som en gang tjente til å beskytte mot piratangrep.</li>
+                     <li class="p-1"> <span class="fw-bold">Sjokoladeindustrien:</span> Byen er kjent for sin lange tradisjon med sjokoladeproduksjon. Den berømte sjokoladefabrikken Valor, som ble grunnlagt i 1881, ligger her, og du kan besøke museet og få en smak av lokal sjokolade.</li>
+                     <li class="p-1"> <span class="fw-bold">Strender:</span> Villajoyosa har flere vakre strender, med Centro-stranden som den mest populære. Disse strendene er kjent for sitt klare, blå vann og er ideelle for svømming, soling og ulike vannsporter.</li>
+                     <li class="p-1"> <span class="fw-bold">Festivaler og kultur:</span> Byen er også kjent for sine livlige festivaler, spesielt Moros y Cristianos, en festival som feirer byens seier over pirater i det 16. århundre. Festivalen er kjent for sine fargerike parader, historiske rekonstruksjoner, og fyrverkeri.</li>
+                     <li class="p-1"> <span class="fw-bold">Gastronomi:</span> Villajoyosa har et bredt utvalg av restauranter som tilbyr både lokale spesialiteter og internasjonale retter. Sjømat er spesielt populær, gitt byens beliggenhet ved kysten.</li>
+                 </ul>
+                 <p class="p-3">Villajoyosa er en litt ukjent perle, som tilbyr en unik blanding av historie, kultur, og natur.</p>
+            </div>
+            <div class="col-md-5 h-100"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-5 mt-5 bg-opacity-75 bg-white text-start mx-auto fs-5 border border-white p-3 ">
+              <p class="p-1 fs-2 fw-bold"> Moros y Christianos</p>
+              <p class="p-1">"Moros y Cristianos" i Villajoyosa er en av de mest særegne og levende feiringene av denne festivalen i Spania. Den er spesielt kjent for sin historiske betydning og spektakulære feiring. Her er noen nøkkelpunkter om festivalen i Villajoyosa:</p>
+              <ul class="fs-6">
+                <li class="p-1"> <span class="fw-bold">Desembarco:</span>Et av de mest dramatiske og unike elementene i Villajoyosa's feiring er "Desembarco", en rekonstruksjon av et maurisk landingsforsøk. Tidlig om morgenen, vanligvis den 28. juli, samles tusenvis av mennesker på stranden for å se en spektakulær simulering av en maurisk landing, som deretter møtes av de kristne forsvarerne. Dette "sjøslaget" er akkompagnert av fyrverkeri og dramatiske effekter.</li>
+                   <li class="p-1"> <span class="fw-bold">Historisk Bakgrunn: </span>Festivalen feirer en spesiell hendelse i 1538, da mauriske pirater under ledelse av den beryktede piraten Zalé-Arraez forsøkte å invadere byen. Ifølge legenden ble byen reddet av skytshelgenen Santa Marta, som forårsaket en plutselig oversvømmelse som forhindret piratene i å nå land.</li>
+                   <li class="p-1"> <span class="fw-bold">Parader og Kostymer:</span> Festivalen inneholder også fargerike parader der deltakere kler seg i ekstravagante kostymer som representerer enten de mauriske eller de kristne styrkene. Disse paradene er kjent for sin detaljerte og kunstneriske fremstilling av historiske drakter.</li>
+                   <li class="p-1"> <span class="fw-bold">Musikk og Dans: </span> Musikken og dansene som ledsager festivalen er livlige og fengslende. Både mauriske og kristne grupper har sine egne tradisjonelle musikkstykker og danseformer som bidrar til den festlige atmosfæren.</li>
+                   <li class="p-1"> <span class="fw-bold">Fyrverkeri og Festligheter:</span>: Festivalen er også kjent for sine imponerende fyrverkerier og gateliv, inkludert matboder, levende musikk og dans ute på gatene, som bidrar til en munter og festlig atmosfære.</li>
+              </ul>
+               <p class="p-3">"Moros y Cristianos" er mer enn bare en historisk rekonstruksjon; det er en feiring av lokal identitet, kultur og fellesskap. Det er et spektakulært syn som tiltrekker seg besøkende fra hele verden og en viktig del av kulturarven i regionen.</p>
           </div>
         </div>
       </section>

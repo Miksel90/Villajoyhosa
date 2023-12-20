@@ -1,6 +1,13 @@
+// Color Variables //
+$primary: #000000;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // landing page//
+
+#back-to-top {
+  z-index: 99;
+}
 
 .masthead {
   position: relative;
@@ -29,7 +36,7 @@
 }
 
 .custom-text {
-  text-shadow: 1px 1px 2px #000000;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .info-bg {
@@ -44,6 +51,27 @@
   bottom: 0;
   left: 0;
   background-image: url(/images/villa2.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+// byen //
+
+.byen-bg {
+  position: relative;
+}
+
+.byen-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/images/Villajoyosa-10.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
