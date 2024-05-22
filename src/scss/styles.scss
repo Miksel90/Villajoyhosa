@@ -1,5 +1,6 @@
 // Color Variables //
 $primary: #000000;
+$secondary: #ff4e50;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -37,7 +38,7 @@ $primary: #000000;
 
 .carousel-item img {
   width: 100%;
-  height: 10rem;
+  height: 800px;
   object-fit: cover;
 }
 
