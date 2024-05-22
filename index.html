@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/scroll.js" defer></script>
     <script src="/js/navScroll.js" defer></script>
+    <script src="/js/carousel.js" defer></script>
   </head>
   <body>
     <header class="navbar navbar-expand-lg sticky-top p-0">
@@ -64,286 +65,26 @@
       <section class="container-fluid text-center mt-1">
         <div class="masthead p-5 fs-1 fw-bold">Velkommen til La Vila Joiosa</div>
       </section>
-      <section class=" container-fluid text-center mt-1 fs-1">
+      <section class="container-fluid text-center mt-1 fs-1">
         <h2 class="fs-1 text-primary mt-5 mb-3">Her Bor Jeg</h2>
-        <div
-          id="carouselExampleCaptions"
-          class="carousel container-fluid slide mb-1"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="4"
-              aria-label="Slide 5"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="5"
-              aria-label="Slide 6"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="6"
-              aria-label="Slide 7"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="7"
-              aria-label="Slide 8"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="8"
-              aria-label="Slide 9"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="9"
-              aria-label="Slide 10"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="10"
-              aria-label="Slide 11"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="11"
-              aria-label="Slide 12"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="/images/view.jpeg"
-                class="d-block w-100"
-                alt="Slide 1"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Utsikt</h2>
-              </div>
+        <div id="carouselExampleCaptions" class="carousel container-fluid slide mb-1" data-bs-ride="carousel">
+            <div class="carousel-indicators" id="carousel-indicators">
+                <!-- Indicators will be inserted here by JavaScript -->
             </div>
-            <div class="carousel-item">
-              <img
-                src="/images/view2.jpeg"
-                class="d-block w-100"
-                alt="Slide 2"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Utsikt</h2>
-              </div>
+            <div class="carousel-inner" id="carousel-inner">
+                <!-- Carousel items will be inserted here by JavaScript -->
             </div>
-            <div class="carousel-item">
-              <img
-                src="/images/view3.jpeg"
-                class="d-block w-100"
-                alt="Slide 3"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Utsikt</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/masterBath.jpg"
-                class="d-block w-100"
-                alt="Slide 4"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Bad 1</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/Master.jpg"
-                class="d-block w-100"
-                alt="Slide 5"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">soverom 1</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/kitchen.jpeg"
-                class="d-block w-100"
-                alt="Slide 6"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Kjøkken</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/livingroom.jpeg"
-                class="d-block w-100"
-                alt="Slide 7"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Stuen</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/diningTable.jpg"
-                class="d-block w-100"
-                alt="Slide 8"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Spisebord</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/livingroom2.jpg"
-                class="d-block w-100"
-                alt="Slide 9"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Stue</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/bathroom2.jpg"
-                class="d-block w-100"
-                alt="Slide 10"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Baderom 2</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/bedroom2.jpeg"
-                class="d-block w-100"
-                alt="Slide 11"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">soverom 2</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="/images/entrance.jpeg"
-                class="d-block w-100"
-                alt="Slide 12"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h2 class="text custom-text">Inngangen</h2>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon bg-dark p-4 rounded"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon bg-dark p-4 rounded"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark p-4 rounded" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark p-4 rounded" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <h1 class="text-primary mb-3 mt-3">Informasjon om Leiligheten</h1>
-        <div id="leiligheten" class=" container-fluid info-bg ">
-          <div class="row d-flex justify-content-between">
-            <div
-              class="col-md-5 mt-5 bg-opacity-75 bg-white text-start mx-auto fs-5 border border-white p-3 "
-            ><p class="text-primary p-1"> Leiligheten ligger i hjertet av gamlebyen i Vilajoyosa med kort
-              vei til stranden og resturanter. Gamlebyen er kjent for sine smale, brosteinsbelagte gater fullt av liv.
-              Dette er byen spanjolene ferier i, så byen er ikke overfylt med hoteller og andre typiske turistfeller.</P>
-              <p class="text-primary p-1">
-              Leiligheten ligger omtrent 5 minutters gange fra sentrum av byen,
-              og 10 minuter til toget som kan ta deg sørover til Alicante på ca 45min eller videre
-              nordover langs Costa Blanca til f.eks Calpe og Benidorm.</p>
-              <p class="text-primary p-1">
-                Det tar 2 minutter å gå til stranden, Playa de Villajoyosa som er kjent for sin fine, gyldne sand og krystallklare vann, noe som gjør den ideell for bading og soling.
-                 Den er også tildelt Blått Flagg-status for renhet og fasiliteter.</p>
-                 <p class="text-primary p-1">
-                  Strandpromenaden er like tiltalende som strendene. Den er kantet med en rekke kafeer, barer og restauranter som serverer lokal mat, særlig fersk sjømat. Promenaden er et ypperlig sted for en avslappende spasertur, og gir fantastisk utsikt over Middelhavet.</p>
-              <p class="fs-3 fw-bold text-center">Google maps </p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195.14244569724025!2d-0.23248426627044516!3d38.5042728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6219f2ea2f0319%3A0xf596d8959afcff45!2sC.%20Costereta%2C%2019%2C%2003570%20La%20Vila%20Joiosa%2C%20Alacant%2C%20Spain!5e0!3m2!1sen!2sno!4v1703063986279!5m2!1sen!2sno"
-               class=" col-md-12 d-flex border border-primary" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div    class="col-md-5 mt-5 bg-opacity-75 bg-white text-start mx-auto fs-5 border border-white p-3">
-                <ul class=" fs-3"> To soverom:  6 - 8 sengeplasser
-                    <li class="fs-5">Hovedsoverommet har en dobbelseng og egen fransk balkong med utsikt.</li>
-                    <li class="fs-5">Gjesterommet har to enkeltsenger som kan gjøres om til dobbeltsenger, og har utsikt ut mot gaten.</li>
-                    <li class="fs-5">Sofaen i stuen kan trekkes ut til dobbeltseng.</li>
-                </ul>
-                <ul class="fs-3"> To bad
-                    <li class="fs-5">Begge badene har dusj og toalett.</li>
-                </ul>
-                <ul class="fs-3"> Kjøkkenet
-                    <li class="fs-5">Kjøkkenet kommer fult utstyrt med oppvaskmaskin, komfyr, kjøleskap, kaffetrakter osv.</li>
-                    <li class="fs-5">Leiligheten har et stort spisebord med plass til flere</li>
-                </ul>
-                <ul class="fs-3"> Vaskerom
-                  <li class="fs-5">Leiligheten er utstyrt med vaskemaskin</li>
-              </ul>
-              <ul class="fs-3"> Stuen
-                <li class="fs-5">Stuen har fransk balkong med utsikt over sjøen. Her kan man nyte lyden fra bølgene på kvelden.</li>
-                <li class="fs-5">Tv med HDMI oppkobling.</li>
-                <li class="fs-5">Et lite musikkanlegg med AUX tilkobling.</li>
-            </ul>
-            <ul class="fs-3"> Aircondition
-              <li class="fs-5">Det er aircondition i alle rom</li>
-          </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </section>
+    
       <section class="container-fluid" id="kontakt">
         <h3 class="fs-1 text-center mt-3 mb-3"> Kontakt og Priser </h3>
       </section>
