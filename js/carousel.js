@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     { src: "/images/masterBath.jpg", caption: "Bad 1" },
     { src: "/images/Master.jpg", caption: "soverom 1" },
     { src: "/images/kitchen.jpeg", caption: "Kjøkken" },
-    { src: "/images/livingroom.jpeg", caption: "Stuen" },
     { src: "/images/diningTable.jpg", caption: "Spisebord" },
     { src: "/images/livingroom2.jpg", caption: "Stue" },
     { src: "/images/bathroom2.jpg", caption: "Baderom 2" },
